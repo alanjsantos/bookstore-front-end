@@ -16,3 +16,24 @@
 .table {
     width: 100%;
 }
+
+.edit-icon {
+    color: rgb(199, 158, 24);
+}
+.delete-icon {
+    color: rgb(202, 54, 54);
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
+}
+
+.book-icon {
+    margin-left: .5rem;
+    color: rgb(86, 206, 206);
+}
+
+button {
+    margin-bottom: .8rem;
+}
