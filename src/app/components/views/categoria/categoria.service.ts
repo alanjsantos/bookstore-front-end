@@ -1,6 +1,6 @@
+import { Categoria } from './../../views/categoria/categoria.model';
 import { HttpClient } from '@angular/common/http';
 import { environment } from './../../../../environments/environment';
-import { Categoria } from './../categorias/categoria.model';
 
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -21,17 +21,33 @@ export class CategoriaService {
     return this.http.get<Categoria[]>(url)
   }
 
+  //buscando categoria por ID
+  findById(id: String):Observable<Categoria> {
+    const url = `${this.baseUrl}/categorias/${id}`
+
+    return this.http.get<Categoria>(url);
+  }
+  
   //criando categoria
   create(categoria: Categoria):Observable<Categoria> {
     const url = `${this.baseUrl}/categorias`
 
     return this.http.post<Categoria>(url, categoria);
   }
+
+  delete(id: string):Observable<void>{
+    const url = `${this.baseUrl}/categorias/${id}`
+
+    return this.http.delete<void>(url);
+  }
+
   messagem(string: String): void {
     this._snack.open(`${string}`, 'OK', {
       horizontalPosition: 'end',
       verticalPosition: 'top',
-      duration: 4000
+      duration: 4500
     })
   }
+
+
 }
