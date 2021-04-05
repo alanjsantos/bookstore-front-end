@@ -1,10 +1,10 @@
+import { Categoria } from './../../views/categoria/categoria.model';
 import { HttpClient } from '@angular/common/http';
 import { environment } from './../../../../environments/environment';
 
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Categoria } from './categoria.model';
 
 @Injectable({
   providedIn: 'root'
@@ -24,10 +24,10 @@ export class CategoriaService {
   }
 
   findById(id: String):Observable<Categoria> {
-    const url = `${this.baseUrl}/categorias/${id}`
+    const url =`${this.baseUrl}/categorias/${id}`
 
     return this.http.get<Categoria>(url)
-  }
+  } 
 
   //criando categoria
   create(categoria: Categoria):Observable<Categoria> {
@@ -36,17 +36,19 @@ export class CategoriaService {
     return this.http.post<Categoria>(url, categoria);
   }
 
-  delete(id: String):Observable<void>{
+  delete(id: string):Observable<void>{
     const url = `${this.baseUrl}/categorias/${id}`
 
-    return this.http.delete<void>(url)
-  } 
+    return this.http.delete<void>(url);
+  }
 
   messagem(string: String): void {
     this._snack.open(`${string}`, 'OK', {
       horizontalPosition: 'end',
       verticalPosition: 'top',
-      duration: 4000
+      duration: 4500
     })
   }
+
+
 }

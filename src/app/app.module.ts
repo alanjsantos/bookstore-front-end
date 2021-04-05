@@ -23,6 +23,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
+<<<<<<< HEAD
+=======
+import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
+>>>>>>> 4cf0a3df9006bb53a40493164ee54cbd15baf758
 
 
 
