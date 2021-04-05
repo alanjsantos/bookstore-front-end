@@ -17,3 +17,10 @@ h1 {
     font-size: 1.3rem;
 }
 
+#versao{
+    position: absolute;
+    font-size: 9px;
+    right: 45px;
+    opacity: 0.4;
+}
+

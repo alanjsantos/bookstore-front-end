@@ -23,10 +23,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
-<<<<<<< HEAD
-=======
-import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
->>>>>>> 4cf0a3df9006bb53a40493164ee54cbd15baf758
+import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
 
 
 
@@ -42,7 +42,8 @@ import { CategoriaReadComponent } from './components/views/categoria/categoria-r
     HomeComponent,
     CategoriaReadComponent,
     CategoriaCreateComponent,
-    CategoriaDeleteComponent
+    CategoriaDeleteComponent,
+    CategoriaUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +60,8 @@ import { CategoriaReadComponent } from './components/views/categoria/categoria-r
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatProgressBarModule
     
   ],
   providers: [],
