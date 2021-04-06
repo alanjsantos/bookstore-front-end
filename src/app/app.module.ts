@@ -25,6 +25,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { LivroReadAllComponent } from './components/views/livro/livro-read-all/livro-read-all.component';
 
 
 
@@ -43,7 +44,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     CategoriaReadComponent,
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
-    CategoriaUpdateComponent
+    CategoriaUpdateComponent,
+    LivroReadAllComponent
   ],
   imports: [
     BrowserModule,

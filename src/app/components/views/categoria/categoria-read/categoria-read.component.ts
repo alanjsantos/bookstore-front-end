@@ -23,7 +23,6 @@ export class CategoriaReadComponent implements OnInit {
   //listando todas as categorias
   findAll(){
     this.service.findAll().subscribe(resposta => {
-      
       this.categorias = resposta;
     })
   }
