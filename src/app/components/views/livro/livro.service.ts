@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Livro } from './../livro.models';
+import { Livro } from './livro.models';
 import { Observable } from 'rxjs';
-import { environment } from './../../../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 import { Injectable } from '@angular/core';
 
 @Injectable({
